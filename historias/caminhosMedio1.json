@@ -1,0 +1,42 @@
+{
+    "1": {
+        "proximos": [
+            2,
+            3,
+            6
+        ],
+        "historia": "Após a dura batalha, o destemido guerreiro {{personagem}} segue sua viagem passando por montanhas imponentes. A neblina densa o envolve, mas sua determinação permanece inabalável. Em meio à paisagem majestosa, ele encontra seu próximo desafio: um {{inimigo}} de olhar penetrante e postura ameaçadora. O ar ao redor parece eletrificado enquanto os dois se encaram, antecipando o embate iminente. Com a adrenalina pulsando em suas veias, {{personagem}} se prepara para mais uma batalha épica."
+    },
+    "2": {
+        "proximos": [
+            1,
+            2,
+            5
+        ],
+        "historia": "Depois de enfrentar seu adversário com bravura, {{personagem}} emerge vitorioso da batalha. Seus músculos cansados, porém exultantes, o impulsionam para a próxima etapa de sua jornada. Ele continua a cruzar terras desconhecidas, atravessando vales verdejantes e florestas antigas. No horizonte, ele vislumbra o contorno de uma montanha colossal. Será lá que encontrará seu próximo desafio, um confronto inesperado contra um {{inimigo}} que emerge das sombras. Determinado, {{personagem}} se prepara para enfrentar essa nova ameaça e descobrir o que aguarda no topo daquela montanha imponente."
+    },
+    "3": {
+        "proximos": [
+            3,
+            4,
+            5
+        ],
+        "historia": "Enquanto {{personagem}} avança, sua jornada o leva a uma terra enigmática, repleta de maravilhas e mistérios. Ele se encontra diante de uma floresta antiga, onde as árvores parecem sussurrar segredos ancestrais. Cada passo que ele dá é guiado por uma força invisível, levando-o a um destino desconhecido. Em seu caminho, ele encontra figuras misteriosas que oferecem enigmas para desvendar e lições para aprender. Com coragem, {{personagem}} abraça o desconhecido, confiando em seu instinto para guiá-lo."
+    },
+    "4": {
+        "proximos": [
+            2,
+            4,
+            6
+        ],
+        "historia": "Após uma série de desafios intrigantes, {{personagem}} descobre pistas que o levam a uma cidade subterrânea escondida. As ruas estreitas e as construções antigas exalam uma aura de mistério e história. No coração da cidade, ele encontra um desafio que não envolve força física, mas sim sabedoria e estratégia. {{personagem}} deve enfrentar um adversário em um jogo de inteligência, onde cada movimento pode determinar o resultado. Com astúcia e perspicácia, ele busca a vitória, sabendo que nem todas as batalhas são travadas com espadas."
+    },
+    "5": {
+        "proximos": [
+            1,
+            4,
+            6
+        ],
+        "historia": "Enquanto a jornada de {{personagem}} continua, ele se vê em uma terra desolada, onde ventos cortantes sopram por uma planície infinita. No horizonte, surge uma torre imponente, um local de poder e mistério. Ao se aproximar, ele é desafiado por sentinelas místicas que protegem a entrada. Apenas aqueles dignos podem acessar o que está além. Com coragem e determinação, {{personagem}} enfrenta as provas impostas pelas sentinelas, provando seu valor e conquistando o direito de avançar. No coração da torre, ele se depara com um enigma guardado por um {{inimigo}} que testa não apenas sua força, mas também sua sagacidade. Com a mente afiada e a determinação inabalável, {{personagem}} enfrenta o desafio que se desenrola diante dele."
+    }
+}

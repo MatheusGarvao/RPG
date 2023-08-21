@@ -1,0 +1,12 @@
+{
+    "1": [
+        "./armas/adaga.json",
+        "./armas/espada.json",
+        "./armas/machado.json"
+    ],
+    "2": [
+        "./historias/caminhosIniciais.json",
+        "./historias/caminhosMedio1.json",
+        "./historias/caminhosFinais.json"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "1": {
+        "proximos": [
+            1,
+            2,
+            3
+        ],
+        "historia": "O bravo e destemido {{personagem}} um dia estava cansado da mesma rotina do dia a dia, resolveu sair para se aventurar mas encontrou o seu primeiro obstaculo, {{inimigo}} ESTAVA ALI, SEU PRIMEIRO ADVERSÁRIO!"
+    },
+    "2": {
+        "proximos": [
+            2,
+            3,
+            5
+        ],
+        "historia": "Em um dia chuvoso {{personagem}} se encontrou preso no seu vilarejo, sem poder fazer nada além de dormir, mas para ele isso estava muito chato, então ele resolveu sair na perigosa chuva sem saber que {{inimigo}} estava a espreita!"
+    },
+    "3": {
+        "proximos": [
+            1,
+            4,
+            5
+        ],
+        "historia": "{{personagem}} começou sua jornada em uma terra vasta e aberta. Enquanto explorava, ele encontrou uma antiga caverna. Ao entrar, ele logo foi atacado por {{inimigo}}!"
+    }
+}
