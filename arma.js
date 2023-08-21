@@ -21,7 +21,6 @@ class Arma {
          * @type {Dados}
          */
         this.dados = new Dados();
-
         this.setTipo(arma.tipo);
         this.setDado(arma.dado);
     }
@@ -43,6 +42,7 @@ class Arma {
     * @param {string} dado - A representação do dado de ataque da arma (por exemplo, "d6").
     * @throws {Error} Lança um erro se a representação do dado não estiver no formato correto.
     */
+
     setDado(dado) {
         if (!/^d\d+$/.test(dado)) {
             throw new Error("A representação do dado deve estar no formato 'dX', onde X é o número de faces.");

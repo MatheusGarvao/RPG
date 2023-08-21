@@ -1,63 +1,60 @@
 import fs from 'fs';
 
 /**
- * Classe para carregar objetos a partir de arquivos JSON.
+ * Classe responsável por carregar objetos a partir de arquivos JSON.
  */
 class CarregarObjetos {
     /**
-     * Constrói uma nova instância da classe CarregarObjetos.
-     * Carrega os caminhos de arquivos JSON no atributo "pastas".
+     * Cria uma instância da classe CarregarObjetos.
      */
     constructor() {
         /**
-         * Um objeto que contém os caminhos para os arquivos JSON.
+         * Armazena os caminhos dos arquivos JSON.
          * @type {Object}
          */
-        this.pastas = this.carregarJson();
+        this.pastas = this.carregarCaminhos();
     }
 
     /**
-     * Carrega objetos a partir de um JSON.
-     * @param {number} tipo - O tipo de objeto a ser carregado (0 para caminhos possíveis, 1 para arma, 2 para história).
-     * @param {number|null} indice - O índice do objeto a ser carregado ou null para carregar todos.
-     * @returns {Array} - Um array contendo os objetos carregados.
+     * Carrega objetos de arquivos JSON com base no tipo e índice fornecidos.
+     * @param {number} [tipo=0] - O tipo de objeto a ser carregado.
+     * @param {number|null} [indice=null] - O índice do objeto a ser carregado.
+     * @returns {Array|Object} - Um array de objetos JSON ou um objeto contendo os caminhos dos arquivos.
      */
     carregarJson(tipo = 0, indice = null) {
-        if (tipo === 0) {
-            try {
-                /**
-                 * Um objeto contendo os caminhos para os arquivos JSON.
-                 * @type {Object}
-                 */
-                const caminhos = JSON.parse(fs.readFileSync('./arquivos.json', 'utf8'));
-                return caminhos;
-            } catch (error) {
-                console.error('Erro ao carregar caminhos do JSON:', error);
-                return {};
-            }
-        }
-
         try {
-            /**
-             * O conteúdo do arquivo JSON a ser carregado.
-             * @type {string}
-             */
-            const arquivo = fs.readFileSync(this.pastas[tipo][indice], 'utf8');
+            if (tipo === 0) {
+                return this.pastas;
+            }
 
-            /**
-             * Os objetos carregados do arquivo JSON.
-             * @type {Array}
-             */
-            const objetos = JSON.parse(arquivo);
+            const caminhos = this.pastas[tipo];
 
             if (indice !== null) {
-                return [objetos];
+                const arquivo = fs.readFileSync(caminhos[indice], 'utf8');
+                return [JSON.parse(arquivo)];
+            } else {
+                return caminhos.map(caminho => {
+                    const arquivo = fs.readFileSync(caminho, 'utf8');
+                    return JSON.parse(arquivo);
+                });
             }
-
-            return objetos;
         } catch (error) {
             console.error('Erro ao carregar objetos do JSON:', error);
             return [];
+        }
+    }
+
+    /**
+     * Carrega os caminhos dos arquivos a partir do arquivo 'arquivos.json'.
+     * @returns {Object} - Um objeto contendo os caminhos dos arquivos.
+     */
+    carregarCaminhos() {
+        try {
+            const caminhos = JSON.parse(fs.readFileSync('./arquivos.json', 'utf8'));
+            return caminhos;
+        } catch (error) {
+            console.error('Erro ao carregar caminhos do JSON:', error);
+            return {};
         }
     }
 }
