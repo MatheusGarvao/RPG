@@ -33,6 +33,31 @@ class Dados {
 
         return gerarNumeroAleatorio(dado);
     }
+
+/**
+ * Gera um número aleatório entre 0 (inclusive) e o número fornecido (exclusive).
+ * @method
+ * @param {number} numero - O número máximo para gerar um valor aleatório.
+ * @returns {number} Um número aleatório entre 0 (inclusive) e o número fornecido (exclusive).
+ * @throws {Error} Lança um erro se o parâmetro numero não for válido.
+ */
+ gerarAleatorio(numero) {
+    /**
+     * Gera um número aleatório entre 0 (inclusive) e o número fornecido (exclusive).
+     * @private
+     * @param {number} max - O número máximo para gerar um valor aleatório.
+     * @returns {number} Um número aleatório entre 0 (inclusive) e o número fornecido (exclusive).
+     */
+    function gerarNumeroAleatorio(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    if (typeof numero !== 'number' || numero < 0 || !Number.isInteger(numero)) {
+        throw new Error("O parâmetro 'numero' deve ser um número inteiro positivo maior ou igual a zero.");
+    }
+    
+    return gerarNumeroAleatorio(numero);
+}
 }
 
 export default Dados;

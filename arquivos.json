@@ -8,5 +8,9 @@
         "./historias/caminhosIniciais.json",
         "./historias/caminhosMedio1.json",
         "./historias/caminhosFinais.json"
+    ],
+    "3": [
+        "./inimigos/esqueleto.json",
+        "./inimigos/goblin.json"
     ]
 }

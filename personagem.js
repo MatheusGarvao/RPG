@@ -6,7 +6,8 @@ import Arma from './arma.js';
 import Dados from './dados.js';
 
 /**
- * Representa um personagem do jogo, com suas características e ações.
+ * Classe Personagem
+ * @classdesc Representa um personagem do jogo, com suas características e ações.
  */
 class Personagem {
     /**
@@ -24,28 +25,9 @@ class Personagem {
          * @private
          */
         this.dados = new Dados();
-
-        /**
-         * O nome do personagem.
-         * @type {string}
-         */
-        this.nome = '';
-
-        /**
-         * A arma equipada pelo personagem.
-         * @type {Arma}
-         */
-        this.arma = null;
-
-        /**
-         * A quantidade total de vida do personagem.
-         * @type {number}
-         */
-        this.vida = 0;
-
         this.setNome(personagem.nome);
         this.setArma(personagem.arma);
-        this.setVida(personagem.vida);
+        this.setVida(parseInt(personagem.vida));
     }
 
     /**
@@ -69,6 +51,7 @@ class Personagem {
      * @param {number} vida - A quantidade de vida do personagem.
      */
     setVida(vida) {
+        // Adiciona um valor aleatório entre 1 e 20 à vida inicial do personagem.
         this.vida = this.dados.rodarDados(20) + vida;
     }
 
