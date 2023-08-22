@@ -70,10 +70,11 @@ class Gerador {
     /**
      * Gera uma história aleatória a partir do JSON de histórias.
      * @param {number} [index=0] - O índice da história a ser gerada.
-     * @returns {string} Uma string representando a história aleatória gerada.
+     * @param {Personagem} personagem - O personagem principal da história.
+     * @param {Personagem} inimigo - O inimigo na história.
+     * @param {Array} [proximos=null] - Uma lista de índices de histórias próximas.
+     * @returns {Object} Um objeto contendo informações sobre a história gerada.
      */
-
-
     gerarHistoria(index, personagem, inimigo, proximos = null) {
         if (proximos === undefined) { proximos = null }
         function buscarHistoria(index, proximos = null, carregador, dados) {
@@ -109,8 +110,6 @@ class Gerador {
         });
         return historia;
     }
-
-
 }
 
 export default Gerador;
