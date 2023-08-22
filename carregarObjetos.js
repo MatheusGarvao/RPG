@@ -1,7 +1,8 @@
 import fs from 'fs';
 
 /**
- * Classe responsável por carregar objetos a partir de arquivos JSON.
+ * Classe CarregarObjetos
+ * @classdesc Classe responsável por carregar objetos a partir de arquivos JSON.
  */
 class CarregarObjetos {
     /**

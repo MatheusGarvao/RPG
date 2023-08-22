@@ -5,7 +5,7 @@
     },
     "2": {
         "proximos": null,
-        "historia": "{{Inimigo}} revela sua forma imponente, preenchendo o ar com uma aura ameaçadora. Sem hesitação, {{personagem}} se coloca em posição de combate, pronto para enfrentar seu adversário formidável em uma batalha que definirá o curso da história."
+        "historia": "{{inimigo}} revela sua forma imponente, preenchendo o ar com uma aura ameaçadora. Sem hesitação, {{personagem}} se coloca em posição de combate, pronto para enfrentar seu adversário formidável em uma batalha que definirá o curso da história."
     },
     "3": {
         "proximos": null,
@@ -13,7 +13,7 @@
     },
     "4": {
         "proximos": null,
-        "historia": "{{Personagem}} encara {{inimigo}} com resolução inabalável. O terreno treme com a tensão iminente, enquanto os dois se lançam um ao outro, desencadeando uma luta que ecoará pelos anais da história."
+        "historia": "{{personagem}} encara {{inimigo}} com resolução inabalável. O terreno treme com a tensão iminente, enquanto os dois se lançam um ao outro, desencadeando uma luta que ecoará pelos anais da história."
     },
     "5": {
         "proximos": null,
@@ -21,6 +21,6 @@
     },
     "6": {
         "proximos": null,
-        "historia": "{{Personagem}} finalmente alcança seu destino, apenas para ser confrontado por {{inimigo}}. Um silêncio tenso domina o ambiente, quebrado apenas pelo som dos passos firmes dos combatentes enquanto se aproximam um do outro, sinalizando o início iminente da batalha."
+        "historia": "{{personagem}} finalmente alcança seu destino, apenas para ser confrontado por {{inimigo}}. Um silêncio tenso domina o ambiente, quebrado apenas pelo som dos passos firmes dos combatentes enquanto se aproximam um do outro, sinalizando o início iminente da batalha."
     }
 }
