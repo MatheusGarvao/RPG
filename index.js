@@ -1,19 +1,17 @@
 import promptSync from 'prompt-sync';
 import Gerador from './geradores.js';
 
-
-//const prompt = promptSync();
-//const personagem = gerador.gerarPersonagem(prompt("Qual o nome do seu personagem? "))
-
+const prompt = promptSync();
 const gerador = new Gerador();
 
-let historiaIndex = 0;
-let historia = gerador.gerarHistoria(historiaIndex);
+const personagem = gerador.gerarPersonagem(prompt("Qual o nome do seu personagem? "));
 
-while (historia) {
-    historiaIndex++;
-    historia.historia = historia.historia.replace("{{personagem}}", "Matheus").replace("{{inimigo}}", "Esqueleto")
+let historiaIndex = 0;
+let historia = 1; 
+
+while (historia.proximos !== null) {
+    const inimigo = gerador.gerarInimigo();
+    historia = gerador.gerarHistoria(historiaIndex, personagem, inimigo, historia.proximos);
     console.log(historia)
-    historia = gerador.gerarHistoria(historiaIndex, historia.proximos)
-    
+    historiaIndex++;
 }
