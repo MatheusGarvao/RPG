@@ -72,24 +72,45 @@ class Gerador {
      * @param {number} [index=0] - O índice da história a ser gerada.
      * @returns {string} Uma string representando a história aleatória gerada.
      */
-    gerarHistoria(index, proximos = null) {
-        if (index > 0 && proximos === null) {
-            return null;
+
+
+    gerarHistoria(index, personagem, inimigo, proximos = null) {
+        if (proximos === undefined) { proximos = null }
+        function buscarHistoria(index, proximos = null, carregador, dados) {
+            if (index > 0 && proximos === null) {
+                return null;
+            }
+
+            const historias = carregador.carregarJson(2, index)[0];
+            const numHistorias = Object.keys(historias).length;
+
+            if (numHistorias === 0) {
+                return null;
+            }
+            if (index === 0) {
+                var historiaIndex = dados.rodarDados(numHistorias);
+                return historias[historiaIndex];
+            }
+
+            return historias[proximos[dados.gerarAleatorio(proximos.length - 1)]];
         }
 
-        const historias = this.carregador.carregarJson(2, index)[0];
-        const numHistorias = Object.keys(historias).length;
+        let historia = buscarHistoria(index, proximos, this.carregador, this.dados);
 
-        if (numHistorias === 0) {
-            return null;
-        }
-        if (index === 0) {
-            var historiaIndex = this.dados.rodarDados(numHistorias);
-            return historias[historiaIndex];
-        }
-
-        return historias[proximos[this.dados.gerarAleatorio(proximos.length - 1)]];
+        historia.historia = historia.historia.replace(/{{(personagem|inimigo)}}/g, (match) => {
+            switch (match) {
+                case "{{personagem}}":
+                    return personagem.nome;
+                case "{{inimigo}}":
+                    return inimigo.nome;
+                default:
+                    return match;
+            }
+        });
+        return historia;
     }
+
+
 }
 
 export default Gerador;
