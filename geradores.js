@@ -66,6 +66,30 @@ class Gerador {
         const armaIndex = this.dados.gerarAleatorio(this.armas.length);
         return this.armas[armaIndex];
     }
+
+    /**
+     * Gera uma história aleatória a partir do JSON de histórias.
+     * @param {number} [index=0] - O índice da história a ser gerada.
+     * @returns {string} Uma string representando a história aleatória gerada.
+     */
+    gerarHistoria(index, proximos = null) {
+        if (index > 0 && proximos === null) {
+            return null;
+        }
+
+        const historias = this.carregador.carregarJson(2, index)[0];
+        const numHistorias = Object.keys(historias).length;
+
+        if (numHistorias === 0) {
+            return null;
+        }
+        if (index === 0) {
+            var historiaIndex = this.dados.rodarDados(numHistorias);
+            return historias[historiaIndex];
+        }
+
+        return historias[proximos[this.dados.gerarAleatorio(proximos.length - 1)]];
+    }
 }
 
 export default Gerador;
