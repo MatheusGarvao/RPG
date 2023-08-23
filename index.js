@@ -38,7 +38,7 @@ while (historia.proximos !== null) {
     }
 
     personagem = combate.personagem;
-    inimigo = combate.inimigo.vida;
+    inimigo = combate.inimigo;
 
     if (personagem.vida <= 0) {
         console.log("O seu personagem morreu!")
