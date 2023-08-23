@@ -1,11 +1,19 @@
 # RPG
 
-A ideia por trás deste projeto é familiarizar com a sintaxe do javascript ao mesmo tempo de trabalhar em equipe na criação de um projeto divertido.
 
-Falta documentar readme.
+## Descrição do Projeto
 
-Para rodar o projeto, é necessário ter o Node.js instalado.
+Este projeto foi criado a fins de aprendizado sobre javascript, juntamente com as questões de versionamento do projeto.
 
-Após isso, vá pelo terminal até a pasta do repositório onde está localizado os arquivos e rode:
+Este projeto é um RPG de texto gerado dinamicamente a partir das histórias existentes.
+## Para rodar
+> É necessário ter o Node.js para executar.
 
-node index.js
+- Abra o projeto e rode NPM install
+- Abra o CMD, navegue até a pasta do projeto e rode `node index.js`
+
+
+## Autores
+
+- [@MatheusGarvão](https://github.com/MatheusGarvao)
+
