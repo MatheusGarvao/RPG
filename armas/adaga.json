@@ -1,4 +1,8 @@
 {
     "tipo": "adaga",
-    "dado": "d4"
+    "dado": "d4",
+    "critico":{
+        "tipo":"+1d4*2",
+        "dano":5
+    }
 }

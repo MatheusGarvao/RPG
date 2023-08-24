@@ -60,8 +60,14 @@ class Personagem {
      * @method
      * @returns {number} O valor de dano causado pelo ataque.
      */
+
+    /**
+     * To do - critico ou erro critico, sistema de chances de dados.
+     */
     atacar() {
+        //let numero = this.rodarDados(20);
         return this.arma.atacar();
+        //return (numero === 1) ? 0 : (numero === 20) ? this.arma.critico() : this.arma.atacar();
     }
 }
 
