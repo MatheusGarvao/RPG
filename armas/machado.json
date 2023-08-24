@@ -1,4 +1,8 @@
 {
     "tipo":"machado",
-    "dado":"d8"
+    "dado":"d8",
+    "critico":{
+        "tipo":"+2d",
+        "dano":4
+    }
 }

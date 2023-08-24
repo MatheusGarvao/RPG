@@ -23,6 +23,11 @@ class Arma {
         this.dados = new Dados();
         this.setTipo(arma.tipo);
         this.setDado(arma.dado);
+        /**
+         * 
+         * To-do: Sistema de crítico
+         */
+        //this.setCritico(arma.critico);
     }
 
     /**
@@ -60,6 +65,15 @@ class Arma {
     }
 
     /**
+     * 
+     * To do - sistema de crítico
+     */
+    // setCritico() {
+    //     this.tipoCritico = x
+    //     this.valorCritico = x
+    // }
+
+    /**
      * Realiza um ataque com a arma.
      * @method
      * @returns {number} O resultado do ataque após a rolagem dos dados.
@@ -67,6 +81,15 @@ class Arma {
     atacar() {
         return this.dados.rodarDados(this.dado);
     }
+
+    /**
+     * To-do Sistema de crítico
+     */
+
+    // critico() {
+    //
+    //
+    // }
 }
 
 export default Arma;

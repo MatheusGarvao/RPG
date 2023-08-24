@@ -1,4 +1,8 @@
 {
     "tipo":"espada",
-    "dado":"d6"
+    "dado":"d6",
+    "critico":{
+        "tipo":"+",
+        "dano":5
+    }
 }
