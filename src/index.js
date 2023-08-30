@@ -1,6 +1,6 @@
 import promptSync from 'prompt-sync';
-import Gerador from './geradores.js';
-import Combate from './combate.js'
+import Gerador from './utilidades/geradores.js';
+import Combate from './utilidades/combate.js'
 
 const prompt = promptSync();
 const gerador = new Gerador();

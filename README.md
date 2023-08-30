@@ -1,19 +1,19 @@
 # RPG
 
-
 ## Descrição do Projeto
 
-Este projeto foi criado a fins de aprendizado sobre javascript, juntamente com as questões de versionamento do projeto.
+Este projeto é uma ferramenta de aprendizado de JavaScript e controle de versões. Explore um RPG de texto único, criado a partir de histórias pré-configuradas.
 
-Este projeto é um RPG de texto gerado dinamicamente a partir das histórias existentes.
 ## Para rodar
-> É necessário ter o Node.js para executar.
 
-- Abra o projeto e rode NPM install
-- Abra o CMD, navegue até a pasta do projeto e rode `node index.js`
+Para executar este projeto é necessário o uso do [Node.js](https://nodejs.org/). Siga as etapas abaixo:
 
+1. Baixe ou clone este repositório.
+2. Abra o terminal e navegue até a pasta raiz do projeto.
+3. Execute o comando `npm install` para instalar as dependências necessárias.
+4. No terminal, navegue até a pasta "src" do projeto.
+5. Execute o comando `node index.js` para iniciar o jogo.
 
 ## Autores
 
 - [@MatheusGarvão](https://github.com/MatheusGarvao)
-
