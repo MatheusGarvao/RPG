@@ -1,7 +1,3 @@
-/**
- * @module Personagem
- */
-
 import Arma from './arma.js';
 import Dados from './dados.js';
 

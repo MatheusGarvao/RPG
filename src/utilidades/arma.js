@@ -86,10 +86,10 @@ class Arma {
      * To-do Sistema de crítico
      */
 
-    // critico() {
-    //
-    //
-    // }
+    critico() {
+
+
+    }
 }
 
 export default Arma;
