@@ -6,7 +6,7 @@ Esta seção descreve a forma como deve ser estruturado o arquivo `arquivos.json
 
 Para acessar os diferentes arquivos a partir de documentos específicos, é importante adotar os caminhos corretos em relação ao `index.js`:
 
-- Para acessar o arquivo "arma.js" por exemplo, a partir do `index.js`, utilize "./utilidades/arma.js".
+- Para acessar o arquivo `arma.js` por exemplo, a partir do `index.js`, utilize "./utilidades/arma.js".
 
 ## **Arquivos JSON:**
 
